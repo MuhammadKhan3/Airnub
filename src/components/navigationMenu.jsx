@@ -38,7 +38,7 @@ const NavigationMenu = () => {
         </div>
      }
     <div className='mt-3   overflow-hidden h-auto w-[85vw] '>
-
+        {/*  */}
       <div>
 
       <Slider {...settings} className='h-full scroll-smooth' ref={customeSlider} id="scrollDemo" s>
