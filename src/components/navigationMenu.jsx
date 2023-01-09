@@ -40,6 +40,7 @@ const NavigationMenu = () => {
     <div className='mt-3   overflow-hidden h-auto w-[85vw] '>
         {/*  */}
       <div>
+        {/*  */}
 
       <Slider {...settings} className='h-full scroll-smooth' ref={customeSlider} id="scrollDemo" s>
           <div className='flex flex-col content-center   items-center text-gray-500 hover:text-gray-800  cursor-pointer justify-center    !w-fit    transition-all hover:underline decoration-gray-300 decoration-4   underline-offset-[18px] h-16 after:relative after:left-10 after:top-0 after:border-r-[1px]  after:pt-10 after:border-gray-600'>
