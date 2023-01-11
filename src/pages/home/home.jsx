@@ -6,9 +6,7 @@ import Header from "./header";
 const Home=()=>{
     return (
     <div className="flex flex-col">
-        <Header/>
-        <NavigationMenu/>
-        <Property/>
+    <Header/>
     </div>
         )
 }

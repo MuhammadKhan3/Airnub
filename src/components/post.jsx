@@ -21,36 +21,22 @@ const Post = () => {
         dots: true,
         speed: 500,
         infinite:false,
+        arrows:false,
         slidesToShow: 1,
         slidesToScroll: 1,
 
       };
       console.log(next)
       console.log(next<=item.length)
-  return (<div className="group absolute w-64 cursor-pointer">
+  return (<div className="group relative  w- cursor-pointer">
 {/* Previos action */}
-    <div className="absolute  top-5 bg-black z-10 bg-opacity-40    text-white ml-56 bg-blend-darken">
-        <AiOutlineHeart size='22' className="text-current"/>
-    </div>
-    <div className="absolute top-28 z-10   ">
-        {next>1 &&
-        <div onClick={gotoPrev} className="absolute bg-white hover:bg-gray-50 hover:scale-105  transition-all ml-1 !float-left   cursor-pointer hidden group-hover:inline  border w-fit rounded-full h-fit hover:shadow-xl active:scale-105 p-1">
-                <GoChevronLeft size='25'/>
-       </div>
-       }
-       {next<=item.length &&
-       <div onClick={gotoNext} className="bg-white absolute left-52 hover:bg-gray-50 hover:scale-105  transition-all  !float-right   hidden group-hover:inline cursor-pointer border w-fit rounded-full h-fit hover:shadow-xl active:scale-105 p-1">
-                        <GoChevronRight size='25'/>
-        </div>
-       }
-    </div>
+
+ 
 {/* Next Action */}
-    <Slider {...settings} className="w-64 h-5 !p-0" ref={customeSlider}>
-          <div className="h-64 w-full  shadow-inner  overflow-hidden bg-opacity-50 rounded-lg">
-            <img src={require('../assets/posts/1.jpg')} className="h-full w-full object-cover"/>
-          </div>
-          <div className=" h-64 w-full overflow-hidden rounded-lg">
+    <Slider {...settings} className="w-68 h-5 !p-0" ref={customeSlider}>
+          <div className=" h-64 w-64  overflow-hidden rounded-lg">
             <img src={require('../assets/posts/2.jpg')} className="h-full w-full object-cover"/>
+            
           </div>
           <div className=" h-64 w-full overflow-hidden rounded-lg">
             <img src={require('../assets/posts/3.jpg')} className="h-full w-full object-cover"/>
@@ -65,6 +51,21 @@ const Post = () => {
             <img src={require('../assets/posts/2.jpg')} className="h-full w-full object-cover"/>
           </div>
         </Slider>
+        <div className="relative  bg-black z-10 bg-opacity-40 !w-fit flex items-center  justify-end    text-white ml-56 ">
+           <AiOutlineHeart size='22' className="text-current"/>
+        </div>
+        <div className="relative  my-auto flex  items-center  top-14 justify-between">
+              {next>1 &&
+              <div onClick={gotoPrev} className=" bg-white hover:inline hover:bg-gray-50 hover:scale-105  transition-all ml-1 !float-left   cursor-pointer hidden group-hover:inline  border w-fit rounded-full h-fit hover:shadow-xl active:scale-105 p-1">
+                      <GoChevronLeft size='25'/>
+              </div>
+            }
+            {next<=item.length &&
+              <div onClick={gotoNext} className="bg-white hover:inline   hover:bg-gray-50 hover:scale-105  transition-all  !float-right   hidden  cursor-pointer border w-fit rounded-full h-fit hover:shadow-xl active:scale-105 p-1">
+                              <GoChevronRight size='25'/>
+              </div>
+            }
+        </div>
     </div>)
 }
 

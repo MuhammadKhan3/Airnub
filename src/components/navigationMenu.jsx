@@ -37,7 +37,7 @@ const NavigationMenu = () => {
                 <GoChevronLeft size='25'/>
         </div>
      }
-    <div className='mt-3   overflow-hidden h-auto w-[85vw] '>
+    <div className='mt-3   overflow-hidden h-auto w-[85vw] pl-4'>
         {/*  */}
       <div>
         {/*  */}

@@ -5,6 +5,40 @@ module.exports = {
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
+    fontSize: {
+      'base': ['16px', {
+//styleName: Base;
+        fontFamily: 'Poppins',
+        fontSize: '16px',
+        fontWeight: '400',
+        lineHeight: '20px',
+        letterSpacing: '-0.025em',
+        textAlign: 'right',
+
+      }],
+      'base-bold':[
+        '14px',{
+          //styleName: Base Bold;
+          fontFamily: 'Poppins',
+          fontSize: '14px',
+          fontWeight: '600',
+          lineHeight: '24px',
+          letterSpacing: '-0.025em',
+          textAlign: 'right',
+
+        }
+      ],
+      'base2': ['14px', 
+      {
+        fontfamily: 'Inter',
+        fontSize: '14px',
+        fontWeight: '400',
+        lineHeight: '17px',
+        letterSpacing: '-0.025em',
+        textAlign: 'right',
+        
+      }],
+    },
     screens:{
       'mb':{'min': '300px', 'max': '639px'},
       'sm': {'min': '640px', 'max': '767px'},
@@ -25,9 +59,7 @@ module.exports = {
 
     },
     colors:{
-      darkyellow:'#c49a50',
-      'darkyellow-500':'#755c30'
-
+      'primaryWeb':'#C49A50',
     },
 
     extend: {},
