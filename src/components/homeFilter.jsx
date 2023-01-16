@@ -50,7 +50,7 @@ const HomeFilter = ({filterClick,setfilterClick}) => {
       </div>
     }
     </div>
-    <div className='bg-[#F7F7F7] rounded-[74px] overflow-hidden h-[67px]  hidden sm:inline-block md:inline-block w-[90%]  px-2 mb:flex mb:flex-row mb:items-center'>
+    <div className='bg-[#F7F7F7] rounded-[74px] overflow-hidden h-[67px]  hidden  w-[90%]  px-2 mb:flex mb:flex-row mb:items-center'>
        <input type='text' className='bg-[#F7F7F7]  border-none outline-none ring-0 w-[90%] focus:ring-0 h-full text-base'/>
        <FiSearch size={20} className=" border-[1px] border-[#C0C0C0]  p-2 w-[39px] h-[39px] rounded-full"/>
     </div>
