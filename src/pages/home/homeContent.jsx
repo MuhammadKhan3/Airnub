@@ -2,31 +2,31 @@ import React, { useState } from 'react'
 import HomeFilter from '../../components/homeFilter';
 import {BiGlobe} from 'react-icons/bi'
 import {MdKeyboardArrowUp} from 'react-icons/md'
+import SearchType from '../../components/searchType';
 
 const HomeContent = () => {
   const [propertyType,setpropertyType]=useState('buy');
+  const [filterClick,setfilterClick]=useState('');
+
   return (
-    // 
-    <section className=' bg-gradient-to-tr  from-pink-50 via-pink-50   to-blue-50 mix-blend-multiply  backdrop-blur-xl backdrop-brightness-150  bg-white/30   flex flex-col items-center justify-center w-full   h-fit relative'>
+    <section className=' lg:bg-gradient-to-tr  from-pink-50 via-pink-50   to-blue-50 mb:bg-white mix-blend-multiply    bg-white/30   flex flex-col items-center justify-center w-full   h-fit relative text-black' onClick={(e)=>{ console.log('bublin'); setfilterClick('')}}>
        <div className='h-fit   mt-28 text-center'>
-         <h1 className='text-bigHeading h-fit w-[62.5%] mx-auto'>
+         <h1 className='text-bigHeading h-fit w-[62.5%] mx-auto text-black'>
            Discover a <span className='text-primaryWeb'>place</span> you’ll love to live
          </h1>
        </div>
-       <div className='h-fit space-x-2 mx-auto mt-8' >
-         <button className={`py-[12px] px-[41px] text-subTitle rounded-full ${propertyType==='buy' ? 'border-[1px] border-[#717171] bg-[#222222]    text-white':'bg-white border-[1px] border-[#717171]'} h-fit `} onClick={()=>setpropertyType('buy')}>Buy</button>
-         <button className={`py-[12px] px-[41px] text-subTitle rounded-full ${propertyType==='rent' ? 'border-[1px] border-[#717171] bg-[#222222]   text-white' :'bg-white border-[1px] border-[#717171] '} `} onClick={()=>setpropertyType('rent')}>Rent</button>
+       <div className='h-fit  mx-auto mt-8' >
+        <SearchType propertyType={propertyType} setpropertyType={setpropertyType}/>
        </div>
-       <div className='h-full w-[62%] mx-auto text-center mt-5 '>
-          <HomeFilter/>
+       <div className='h-full w-[50%] mb:w-[94%] sm:w-[80%] md:w-[80%] mx-auto text-center mt-5 ' onClick={(e)=>{e.stopPropagation()}}>
+          <HomeFilter filterClick={filterClick} setfilterClick={setfilterClick} />
        </div>
-       <div className='mx-auto border  border-[#C0C0C0] rounded-xl pt-[15px] pr-[26px] pb-[15px] pl-[26px] flex flex-row space-x-6 w-[30vw]'>
+       <div className='mx-auto rounded-xl  flex flex-row items-center  gap-10 w-[30vw]'>
           <div>
-            <img src={require('../../assets/orderedList.png')}/>
+            <button style={{boxShadow:' 0px 3px 18px rgba(0, 0, 0, 0.2)'}} className='px-[34px] rounded-full text-white py-[12px] bg-primaryWeb'>Wanted</button>
           </div>
           <div>
-            <h1 className='text-base-bold'>Submit your requirements</h1>
-            <p className='text-small '>Lorem ipsum dolor sit amet, consectetur adipiscing elit Ut enim ad minim veniam</p>
+            <p className='text-base2 text-[#717171]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit Ut enim ad minim veniam</p>
           </div>
        </div>
 
