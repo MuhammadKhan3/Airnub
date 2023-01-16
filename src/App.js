@@ -5,7 +5,10 @@ import Home from './pages/home/home';
 
 function App() {
   return (
+  <div className='w-full h-screen'>
     <Home/>
+  </div>
+
   );
 }
 

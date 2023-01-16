@@ -5,11 +5,18 @@
 body {
 
   font-family: 'Poppins', sans-serif;
-  
+  background-color: white;
+  height: 100%;
+  width: 100%;
+    
   /* selection:bg-yellow-400 selection:text-white
   scrollbar-thin scrollbar-thumb-darkyellow   */
 }
 
+.bodyColor{
+  background-color: 
+  linearGradient(to left top, rgb(255, 228, 230), rgb(204, 251, 241));
+}
 .slick-dots li.slick-active button:before {
   color:White !important;
 }

@@ -17,28 +17,92 @@ module.exports = {
 
       }],
       'base-bold':[
+       '16px',{
+        fontFamily: 'Poppins',
+        fontSize: '16px',
+        fontWeight: '600',
+        lineHeight: '24px',
+        letterSpacing: '-0.025em',
+        textAlign: 'left',
+       }
+      ],
+      'base2-bold':[
         '14px',{
           //styleName: Base Bold;
           fontFamily: 'Poppins',
-          fontSize: '14px',
+          fontStyle: 'normal',
           fontWeight: '600',
-          lineHeight: '24px',
+          fontSize: '14px',
+          lineHeight: '21px',
+          /* identical to box height */          
+          textAlign: 'center',
           letterSpacing: '-0.025em',
-          textAlign: 'right',
+          
 
         }
       ],
       'base2': ['14px', 
       {
-        fontfamily: 'Inter',
+        fontFamily: 'Poppins',
+        fontStyle: 'normal',
+        fontWeight:' 400',
         fontSize: '14px',
-        fontWeight: '400',
-        lineHeight: '17px',
-        letterSpacing: '-0.025em',
-        textAlign: 'right',
+        lineHeight: '18px',
+        /* identical to box height, or 129% */
         
-      }],
-    },
+        textAlign: 'center',
+        letterSpacing: '-0.025em'
+      }
+    ],
+      'smallBold':[
+        '12px',{
+          fontFamily: 'Poppins',
+          fontStyle: 'normal',
+          fontWeight: '600',
+          fontSize: '12px',
+          lineHeight: '18px',
+          /* identical to box height */
+
+          textAlign: 'center',
+          letterSpacing: '-0.025em',
+        }
+      ],
+      'subTitle':
+      [
+        '22px',{
+          fontFamily: 'Poppins',
+          fontSize: '22px',
+          fontWeight: '600',
+          lineHeight: '33px',
+          letterSpacing: '-0.025em',
+          textAlign: 'center',
+        }
+      ],
+      'bigHeading':[
+        '48px',{
+          fontFamily: 'Poppins',
+          fontStyle: 'normal',
+          fontWeight: '500',
+          fontSize: '48px',
+          lineHeight: '60px',
+          textAlign: 'center',
+          letterSpacing: '-0.025em'
+        }
+        
+      ],
+      'small':[
+        '12px',{
+          //styleName: Small;
+          fontFamily: 'Poppins',
+          fontSize: '12px',
+          fontWeight: '400',
+          lineHeight: '18px',
+          letterSpacing: '-0.025em',
+          textAlign: 'left',
+
+        }
+      ]
+  },
     screens:{
       'mb':{'min': '300px', 'max': '639px'},
       'sm': {'min': '640px', 'max': '767px'},
@@ -60,6 +124,8 @@ module.exports = {
     },
     colors:{
       'primaryWeb':'#C49A50',
+      'midGray':'#DDDDDD',
+      'grayIcon':'#717171',
     },
 
     extend: {},
@@ -70,6 +136,7 @@ module.exports = {
     require('@tailwindcss/line-clamp'),
     require("daisyui"),
     require('@tailwindcss/typography'),
+    require("tailwind-gradient-mask-image")
   ],
   variants: {
     scrollbar: ['rounded']

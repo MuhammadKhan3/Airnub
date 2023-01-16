@@ -1,0 +1,79 @@
+.logo{
+    position: absolute;
+    width: 102.79px;
+    height: 26.22px;
+    left: 70px;
+    top: 26.89px;
+}
+
+.filter{
+    display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 4px;
+gap: 24px;
+
+position: absolute;
+width: 387px;
+height: 48px;
+left: 766px;
+top: 16px;
+
+/* White */
+
+background: #FFFFFF;
+/* Gray 2 */
+
+border: 1px solid #C0C0C0;
+border-radius: 32px;
+}
+
+.overlay-filter{
+    position: absolute;
+width: 800px;
+height: 80px;
+left: 559px;
+top: 80px;
+
+/* Light Gray */
+
+background: #EBEBEB;
+/* Mid Gray */
+
+border: 1px solid #DDDDDD;
+border-radius: 85px;
+}
+
+.avatar-container{
+    box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 4px 4px 4px 14px;
+gap: 11px;
+
+/* White */
+
+background: #FFFFFF;
+/* Gray 2 */
+
+border: 1px solid #C0C0C0;
+border-radius: 19px;
+}
+
+.property::before{
+    display: block;
+    content: 'Add property';
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    @apply
+    text-base2-bold
+    /* overflow: hidden;
+    visibility: hidden; */
+}

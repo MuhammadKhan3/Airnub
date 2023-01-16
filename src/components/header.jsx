@@ -1,4 +1,4 @@
-import Filter from '../../components/filter';
+import Filter from './filter';
 import {AiOutlineSearch} from 'react-icons/ai'
 import {BiMenu} from 'react-icons/bi';
 import {IoPersonCircle} from 'react-icons/io5'
@@ -8,55 +8,54 @@ import Switch from "react-switch";
 import {RxCross2} from 'react-icons/rx'
 import {BsPlusLg} from 'react-icons/bs'
 import {HiOutlineHomeModern} from 'react-icons/hi2'
-
+import './header.css'
 import { useState } from 'react';
 import {FiSearch} from 'react-icons/fi'
 const Header=()=>{
    const [activeheader,setheader]=useState(false);
+   
    const [userSwitch,setuserSwitch]=useState('buy');
    const [filter,setfilter]=useState('');
 return(
-   <section className='flex flex-col'>
-
+   <section className='flex flex-col h-full relative'>
       {/* main header */}
-     {!activeheader ?
-      <div className="flex flex-row justify-between items-center border-b-[1px] p-2 !h-[80px]">
+     
+      <div className={`flex flex-row justify-between items-center border-b-[1px] p-2 !h-[80px] bg-white z-30 transition-all ${activeheader ? 'bg-opacity-0 hidden' :'bg-opacity-100 visible '}`}>
          
             <div className='!ml-16 p-4 h-[26.22px]'>
-                  BAKSH
+                  <img src={require('../assets/posts/logo.png')} className="logo"/>
             </div>
-            <div className='border-[1px] flex flex-row items-center p-1.5 pl-8 rounded-3xl space-x-6 text-base2 cursor-pointer shadow-md hover:shadow-md hover:shadow-gray-400 transition-all hover:bg-[#EBEBEB]' onClick={()=>setheader(!activeheader)}>
+            <div className=' border-[2px] border-primaryWeb flex flex-row items-center  p-2 pl-8 py-3 rounded-3xl space-x-6 text-smallBold cursor-pointer  transition-all hover:shadow-lg ' onClick={()=>setheader(!activeheader)}>
                <div>
                   Anywhere
                </div>
                <div className='border-l-[1px] pl-6'>
                   Any property
                </div>
-               <div className='text-[#717171] border-l-[1px] pl-6'>
+               <div className=' border-l-[1px] pl-6'>
                   Add filters
                </div>
-               <div className='bg-primaryWeb text-white rounded-full p-2'>
-                  <GoSearch size="14" />
+               <div className=' rounded-full  text-primaryWeb'>
+                  <GoSearch size={21} className='w-full h-full' />
                </div>
-
             </div>
-            <div className='flex flex-row items-center space-x-10'>
-               <div className='text-base2 flex flex-row items-center hover:bg-[#EBEBEB] cursor-pointer p-2 hover:rounded-full'>
+
+            <div className='flex flex-row items-center space-x-2 mr-10'>
+               <div className='group text-base2 transition-all hover:text-primaryWeb   hover:text-base2-bold ease-in duration-200 delay-75  flex flex-row items-center space-x-1 px-5  hover:stroke-1 hover:border-primaryWeb  border-[1px] border-midGray cursor-pointer p-2 rounded-full  '>
                        <BsPlusLg size='8'/>
-                       <span>Add property</span>
+                       <span className='property'>Add property</span>
                 </div>
-               <div className='flex flex-row items-center border-[1px] transition-all shadow-sm p-1.5  hover:shadow-md hover:shadow-gray-400 rounded-full cursor-pointer mr-20'>
-                  <BiMenu size='20'/>
-                  <IoPersonCircle size="25"/>
+               <div className='flex flex-row items-center p-0 border-[1px] rounded-full pl-2 py-0.5 group hover:border-primaryWeb'>
+                  <BiMenu size='21' className='text-[#717171] group-hover:text-primaryWeb'/>
+                  <IoPersonCircle size='30'  className=' text-[#DDDDDD] text-[100%] max-w-[30px]'/>
                </div>
             </div>
       </div>
-      :
-      <div className=' w-full       h-full '>
-         <div className={` flex flex-row justify-between items-center border-b-[1px]  w-full p-2 bg-white`}>
-            
+
+      <div className={` w-full h-screen    bg-gray-800  bg-opacity-20 transition-all ease-in-out  duration-300 delay-100   absolute z-50  ${activeheader ?  'opacity-100  top-0 visible':'opacity-0  -top-96 invisible'}`} onClick={(e)=>{e.stopPropagation(); console.log('parent') }}>
+         <div className={` flex flex-row justify-between items-center border-b-[1px]  w-full p-2 bg-white  `} onClick={(e)=>{e.stopPropagation(); console.log('child') }}>            
                <div className='!ml-16 p-4 h-[26.22px]'>
-                     BAKSH
+                  <img src={require('../assets/posts/logo.png')} className="logo"/>
                </div>
                <div className='flex flex-col  mx-auto space-y-3 w-full'>
                      <div className='mx-auto   border-[1.8px] border-gray-500 w-fit rounded-full flex flex-row  cursor-pointer'>
@@ -81,11 +80,12 @@ return(
 
                      </div>
                </div>
-
+ 
+            
          </div>
 
          {filter==='location' ?
-         <div className='relative left-20 m-0   mx-auto overflow-hidden rounded-xl   h-[467px] shadow-lg w-[45%] '>
+         <div className=' xl: xl: m-0   mx-auto overflow-hidden rounded-xl   h-[467px] shadow-lg w-[45%] bg-white z-50 absolute  left-1/3 top-40'>
                         <div className='bg-[#F7F7F7] h-[155px] p-6 rounded-b-3xl'>
                            <h1 className='text-base-bold'>Recent Searches</h1>
                            <div className='flex flex-row m-0 mt-1  items-center  gap-2  flex-wrap '>
@@ -142,7 +142,7 @@ return(
                         </div>
          </div> 
          :filter==='property' ? 
-          <div className='relative left-20 m-0 p-10   mx-auto overflow-hidden rounded-3xl   h-[467px] shadow-lg w-[45%]  space-x-3 '>
+          <div className=' m-0 p-10   mx-auto overflow-hidden rounded-3xl   h-[467px] shadow-lg w-[45%]  space-x-3 z-50 bg-white absolute  left-[30vw] top-40'>
                         <div className='flex flex-row'>
                            <h1 className='text-base2 active:border-red-500 active:border-b-2 h-fit  px-2 w-fit cursor-pointer'>Residential</h1>
                            <h1 className='text-base2 active:border-red-500 active:border-b-2 h-fit  px-2 w-fit cursor-pointer'>Commercial</h1>
@@ -216,7 +216,7 @@ return(
          </div>
          :filter==='add-filter'
          &&
-         <div className='relative left-20 m-0   mx-auto overflow-hidden rounded-xl   h-[467px] shadow-lg w-[45%] '>
+         <div className=' m-0   mx-auto overflow-hidden rounded-xl   h-[467px] shadow-lg w-[45%] z-50 bg-white absolute  left-[30vw] top-40'>
                         <div className='bg-[#F7F7F7] h-[155px] p-6 rounded-b-3xl'>
                            <h1 className='text-base-bold'>Recent Searches</h1>
                            <div className='flex flex-row m-0 mt-1  items-center  gap-2  flex-wrap '>
@@ -274,10 +274,7 @@ return(
          </div>}
 
          
-      </div>}
-      {
-
-      }
+      </div>
       
    </section>
 );
