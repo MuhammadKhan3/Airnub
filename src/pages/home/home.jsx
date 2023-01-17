@@ -7,17 +7,10 @@ import BottomNavigation from "../../components/bottomNavigation";
 const Home=()=>{
     return (
     <div className="flex flex-col relative h-[100vh] w-full text-black bg-blue-500" >
-        {/* <HomeHeader/> */}
+        <HomeHeader/>
         {/* <HomeContent/> */}
         {/* <div className="mt-4"> */}
           {/* <BottomNavigation/> */}
-          <h1>Hi</h1>
-          <h1>Hi</h1>
-          <h1>Hi</h1>
-          <h1>Hi</h1>
-          <h1>Hi</h1>
-          <h1>Hi</h1>
-
         {/* </div> */}
     </div>
         )

@@ -7,8 +7,6 @@ function App() {
     // h-[90vh]
   <div className='w-full h-screen bg-white  '>
     <Home/>
-    {/* asldkfjl
-    <h1>h1</h1> */}
   </div>
 
   );
