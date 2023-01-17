@@ -12,7 +12,7 @@ const BottomNavigation = () => {
                <img src={require('../assets/navigation/add.png')} className="w-[18px] h-[18px] mx-auto "/>
            }
 
-           <span >Post ad</span>
+           <span  className='mt-1'>Post ad</span>
         </div>
         <div className={`flex flex-col p-5 cursor-pointer  ${menu==='whislist' ? 'border-t-2 border-primaryWeb text-primaryWeb': ''}`} onClick={()=>setmenu('whislist')}>
            {menu==='whislist' ?
@@ -20,7 +20,7 @@ const BottomNavigation = () => {
                :
                <img src={require('../assets/navigation/whislist.png')} className="w-[18px] h-[18px] mx-auto "/>
            }
-           <span>Wishlist</span>
+           <span className='mt-1'>Wishlist</span>
         </div>
         <div className={`flex flex-col p-5 cursor-pointer  ${menu==='search' ? 'border-t-2 border-primaryWeb text-primaryWeb': ''}`} onClick={()=>setmenu('search')}>
             {menu==='search' ?
@@ -28,7 +28,7 @@ const BottomNavigation = () => {
                :
                <img src={require('../assets/navigation/search.png')} className="w-[18px] h-[18px] mx-auto "/>
             }
-           <span>Search</span>
+           <span className='mt-1'>Search</span>
         </div>
         <div className={`flex flex-col p-5 cursor-pointer  ${menu==='inbox' ? 'border-t-2 border-primaryWeb text-primaryWeb': ''}`} onClick={()=>setmenu('inbox')}>
             {menu==='inbox' ?
@@ -36,7 +36,7 @@ const BottomNavigation = () => {
                :
                <img src={require('../assets/navigation/message.png')} className="w-[18px] h-[18px] mx-auto "/>
             }
-           <span>Inbox</span>
+           <span className='mt-1'>Inbox</span>
         </div>
         <div className={`flex flex-col p-5 cursor-pointer  ${menu==='person' ? 'border-t-2 border-primaryWeb text-primaryWeb': ''}`} onClick={()=>setmenu('person')}>
             {menu==='person' ?
@@ -44,7 +44,7 @@ const BottomNavigation = () => {
                :
                <img src={require('../assets/navigation/person.png')} className="w-[18px] h-[18px] mx-auto "/>
             }
-           <span>Person</span>
+           <span className='mt-1'>Person</span>
         </div>
     </div>
   )
