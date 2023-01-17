@@ -14,7 +14,7 @@ const HomeContent = () => {
   return (
     <section className=' xl:bg-gradient-to-tr 2xl:bg-gradient-to-tr 3xl:bg-gradient-to-tr  bg-gradient-to-tr  from-pink-50 via-pink-50   to-blue-50 mix-blend-multiply       flex flex-col items-center justify-center      text-black  h-fit  mb:h-full w-full zoom absolute top-[110px]  mb:relative mb:top-0 bg-blend-multiply' onClick={(e)=>{ console.log('bublin'); setfilterClick('')}} >
        <div className='h-fit   mt-28 mb:mt-[3rem] text-center '>       
-         <h1 className='text-bigHeading h-fit w-[50.5%] mx-auto    text-justify mb:w-[70%]  text-black  mb:text-[#C0C0C0]  font-light mb:text-responsive-heading'>
+         <h1 className='text-bigHeading h-fit w-[50.5%] mx-auto    text-justify mb:w-[310px] sm:w-[310px]  text-black  mb:text-[#C0C0C0]  font-light mb:text-responsive-heading'>
            Discover a <span className='text-primaryWeb'>place</span> you’ll love to live
          </h1>
        </div>
@@ -27,13 +27,13 @@ const HomeContent = () => {
           <HomeFilter filterClick={filterClick} setfilterClick={setfilterClick} />
        </div>
        
-       <div className='mx-auto rounded-xl mt-48 mb:mt-24 flex flex-row items-center  gap-10 w-[30vw] mb:flex-col mb:gap-5'>
+       <div className='mx-auto rounded-xl mt-48 mb:mt-24 flex flex-row items-center  gap-10 w-auto  mb:flex-col mb:gap-5'>
           <div>
             <a style={{boxShadow:' 0px 3px 18px rgba(0, 0, 0, 0.2)'}} className='px-[34px] rounded-full text-white py-[12px] bg-primaryWeb mb:hidden cursor-pointer'>Wanted</a>
             <a  className='px-[34px]  py-[12px] border-[1px] border-[#717171] hidden mb:inline-block text-base2 text-[#717171] rounded-[10px] hover:text-primaryWeb hover:border-primaryWeb'>Wanted</a>
           </div>
-          <div className='w-96 mb:w-64'>
-                <p className='text-base2 text-[#717171] mb:text-small  text-left mb:text-center '>
+          <div className='w-[500px] mb:w-[260px]'>
+                <p className='text-base2 text-[#717171] mb:text-small w-full  text-left mb:text-center '>
                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
                 </p>
           </div>

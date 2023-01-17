@@ -108,7 +108,6 @@ module.exports = {
           fontSize: '57px',
           fontWeight: '275',
           lineHeight: '5rem',
-          letterSpacing: '-4px',
           textAlign: 'left',
           
           // fontFamily: 'Poppins',
