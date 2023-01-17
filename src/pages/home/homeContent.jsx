@@ -12,8 +12,8 @@ const HomeContent = () => {
   
 
   return (
-    <section className=' xl:bg-gradient-to-tr 2xl:bg-gradient-to-tr 3xl:bg-gradient-to-tr  bg-gradient-to-tr  from-pink-50 via-pink-50   to-blue-50 mix-blend-multiply       flex flex-col items-center justify-center      text-black  h-full w-full zoom absolute top-[110px]  mb:relative mb:top-0' onClick={(e)=>{ console.log('bublin'); setfilterClick('')}} >
-       <div className='h-fit   mt-28 mb:mt-[10.5rem] text-center '>       
+    <section className=' xl:bg-gradient-to-tr 2xl:bg-gradient-to-tr 3xl:bg-gradient-to-tr  bg-gradient-to-tr  from-pink-50 via-pink-50   to-blue-50 mix-blend-multiply       flex flex-col items-center justify-center      text-black  h-fit  mb:h-full w-full zoom absolute top-[110px]  mb:relative mb:top-0' onClick={(e)=>{ console.log('bublin'); setfilterClick('')}} >
+       <div className='h-fit   mt-28 mb:mt-[3rem] text-center '>       
          <h1 className='text-bigHeading h-fit w-[50.5%] mx-auto    text-justify mb:w-[70%]  text-black  mb:text-[#C0C0C0]  font-light mb:text-responsive-heading'>
            Discover a <span className='text-primaryWeb'>place</span> you’ll love to live
          </h1>

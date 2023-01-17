@@ -103,20 +103,20 @@ module.exports = {
         }
       ],
       'responsive-heading':[
-        '76px',{
+        '57px',{
           fontFamily: 'Poppins',
-          fontSize: '76px',
+          fontSize: '57px',
           fontWeight: '275',
           lineHeight: '5rem',
-          letterSpacing: '-0.025em',
+          letterSpacing: '-4px',
           textAlign: 'left',
           
-          fontFamily: 'Poppins',
-          fontSize: '76px',
-          fontWeight: '500',
-          lineHeight: '5rem',
-          letterSpacing: '-0.025em',
-          textAlign: 'left'
+          // fontFamily: 'Poppins',
+          // fontSize: '76px',
+          // fontWeight: '500',
+          // lineHeight: '5rem',
+          // letterSpacing: '-0.025em',
+          // textAlign: 'left'
           
         }
       ],
@@ -134,7 +134,7 @@ module.exports = {
       ]
   },
     screens:{
-      'mb':{'min': '300px', 'max': '639px'},
+      'mb':{'min': '250px', 'max': '639px'},
       'sm': {'min': '640px', 'max': '767px'},
       // => @media (min-width: 640px and max-width: 767px) { ... }
 
