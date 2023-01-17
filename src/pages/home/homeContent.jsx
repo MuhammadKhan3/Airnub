@@ -12,7 +12,7 @@ const HomeContent = () => {
   
 
   return (
-    <section className=' xl:bg-gradient-to-tr 2xl:bg-gradient-to-tr 3xl:bg-gradient-to-tr  bg-gradient-to-tr  from-pink-50 via-pink-50   to-blue-50 mix-blend-multiply       flex flex-col items-center justify-center      text-black  h-fit  mb:h-[85%] w-full zoom   mb:relative mb:top-0 bg-blend-multiply absolute top-[130px]' onClick={(e)=>{ console.log('bublin'); setfilterClick('')}} >
+    <section className=' xl:bg-gradient-to-tr 2xl:bg-gradient-to-tr 3xl:bg-gradient-to-tr  bg-gradient-to-tr  from-pink-50 via-pink-50   to-blue-50 mix-blend-multiply       flex flex-col items-center justify-center      text-black  h-[90%] min-h-screen mb:min-h-0 mb:h-[85%] w-full zoom   mb:relative mb:top-0 bg-blend-multiply absolute top-[130px]' onClick={(e)=>{ console.log('bublin'); setfilterClick('')}} >
        <div className='h-fit   mt-28 mb:mt-[3rem] text-center '>       
          <h1 className='text-bigHeading h-fit w-[50.5%] mx-auto    text-justify mb:w-[310px] sm:w-[310px]  text-black  mb:text-[#C0C0C0]  font-light mb:text-responsive-heading'>
            Discover a <span className='text-primaryWeb'>place</span> you’ll love to live
