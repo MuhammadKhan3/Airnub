@@ -7,7 +7,7 @@ import BottomNavigation from "../../components/bottomNavigation";
 const Home=()=>{
     return (
     <div className="flex flex-col relative h-[85vh] w-full " >
-        <HomeHeader/>
+        {/* <HomeHeader/> */}
         {/* <HomeContent/> */}
         {/* <div className="mt-4"> */}
           <BottomNavigation/>
