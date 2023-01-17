@@ -107,14 +107,14 @@ module.exports = {
           fontFamily: 'Poppins',
           fontSize: '76px',
           fontWeight: '275',
-          lineHeight: '65px',
+          lineHeight: '5rem',
           letterSpacing: '-0.025em',
           textAlign: 'left',
           
           fontFamily: 'Poppins',
           fontSize: '76px',
           fontWeight: '500',
-          lineHeight: '65px',
+          lineHeight: '5rem',
           letterSpacing: '-0.025em',
           textAlign: 'left'
           

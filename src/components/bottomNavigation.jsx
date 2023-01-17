@@ -4,8 +4,8 @@ import {MdOutlineAddBox} from 'react-icons/md'
 const BottomNavigation = () => {
     const [menu,setmenu]=useState('');
   return (
-    <div className='border-t-[1px] border-[#DDDDDD] hidden mb:flex mb:flex-row justify-around  text-Xsmall relative  top-20'>
-        <div className={`flex flex-col p-5 cursor-pointer  ${menu==='post-ad' ? 'border-t border-primaryWeb text-primaryWeb': ''} `} onClick={()=>setmenu('post-ad')}>
+    <div className='border-t-[1px] border-[#DDDDDD] hidden mb:flex mb:flex-row justify-around  text-Xsmall fixed  top-[88vh] w-full'>
+        <div className={`flex flex-col p-5 cursor-pointer  ${menu==='post-ad' ? 'border-t-2 border-primaryWeb text-primaryWeb': ''} `} onClick={()=>setmenu('post-ad')}>
            {menu==='post-ad' ?
               <img src={require('../assets/navigation/colorIcon/add.png')} className="w-[18px] h-[18px] mx-auto "/>
                :
@@ -14,7 +14,7 @@ const BottomNavigation = () => {
 
            <span >Post ad</span>
         </div>
-        <div className={`flex flex-col p-5 cursor-pointer  ${menu==='whislist' ? 'border-t border-primaryWeb text-primaryWeb': ''}`} onClick={()=>setmenu('whislist')}>
+        <div className={`flex flex-col p-5 cursor-pointer  ${menu==='whislist' ? 'border-t-2 border-primaryWeb text-primaryWeb': ''}`} onClick={()=>setmenu('whislist')}>
            {menu==='whislist' ?
               <img src={require('../assets/navigation/colorIcon/whilist.png')} className="w-[18px] h-[18px] mx-auto "/>
                :
@@ -22,7 +22,7 @@ const BottomNavigation = () => {
            }
            <span>Wishlist</span>
         </div>
-        <div className={`flex flex-col p-5 cursor-pointer  ${menu==='search' ? 'border-t border-primaryWeb text-primaryWeb': ''}`} onClick={()=>setmenu('search')}>
+        <div className={`flex flex-col p-5 cursor-pointer  ${menu==='search' ? 'border-t-2 border-primaryWeb text-primaryWeb': ''}`} onClick={()=>setmenu('search')}>
             {menu==='search' ?
               <img src={require('../assets/navigation/colorIcon/search.png')} className="w-[18px] h-[18px] mx-auto "/>
                :
@@ -30,7 +30,7 @@ const BottomNavigation = () => {
             }
            <span>Search</span>
         </div>
-        <div className={`flex flex-col p-5 cursor-pointer  ${menu==='inbox' ? 'border-t border-primaryWeb text-primaryWeb': ''}`} onClick={()=>setmenu('inbox')}>
+        <div className={`flex flex-col p-5 cursor-pointer  ${menu==='inbox' ? 'border-t-2 border-primaryWeb text-primaryWeb': ''}`} onClick={()=>setmenu('inbox')}>
             {menu==='inbox' ?
               <img src={require('../assets/navigation/colorIcon/message.png')} className="w-[18px] h-[18px] mx-auto "/>
                :
@@ -38,7 +38,7 @@ const BottomNavigation = () => {
             }
            <span>Inbox</span>
         </div>
-        <div className={`flex flex-col p-5 cursor-pointer  ${menu==='person' ? 'border-t border-primaryWeb text-primaryWeb': ''}`} onClick={()=>setmenu('person')}>
+        <div className={`flex flex-col p-5 cursor-pointer  ${menu==='person' ? 'border-t-2 border-primaryWeb text-primaryWeb': ''}`} onClick={()=>setmenu('person')}>
             {menu==='person' ?
               <img src={require('../assets/navigation/colorIcon/person.png')} className="w-[18px] h-[18px] mx-auto "/>
                :
