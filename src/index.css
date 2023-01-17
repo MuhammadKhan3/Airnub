@@ -7,7 +7,9 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: white;
   height: 100%;
-  width: 100%;  
+  width: 100%;
+  @apply
+  h-screen  
   /* overflow: hidden; */
   
   /* selection:bg-yellow-400 selection:text-white
