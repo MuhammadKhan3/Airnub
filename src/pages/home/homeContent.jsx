@@ -7,11 +7,13 @@ import SearchType from '../../components/searchType';
 const HomeContent = () => {
   const [propertyType,setpropertyType]=useState('buy');
   const [filterClick,setfilterClick]=useState('');
+  
 
   return (
-    <section className=' lg:bg-gradient-to-tr  from-pink-50 via-pink-50   to-blue-50 mb:bg-white mix-blend-multiply    bg-white/30   flex flex-col items-center justify-center w-full   h-fit relative text-black' onClick={(e)=>{ console.log('bublin'); setfilterClick('')}}>
+    <section className='lg:bg-gradient-to-tr md:bg-gradient-to-tr xl:bg-gradient-to-tr 2xl:bg-gradient-to-tr 3xl:bg-gradient-to-tr  from-pink-50 via-pink-50   to-blue-50 mb:bg-white  sm:bg-white   mix-blend-multiply       flex flex-col items-center justify-center w-full   h-fit relative text-black' onClick={(e)=>{ console.log('bublin'); setfilterClick('')}}>
        <div className='h-fit   mt-28 text-center'>
-         <h1 className='text-bigHeading h-fit w-[62.5%] mx-auto text-black'>
+       
+         <h1 className='text-bigHeading h-fit w-[62.5%] mx-auto text-black  mb:text-[#C0C0C0]  font-light mb:text-responsive-heading'>
            Discover a <span className='text-primaryWeb'>place</span> you’ll love to live
          </h1>
        </div>
@@ -21,12 +23,14 @@ const HomeContent = () => {
        <div className='h-full w-[50%] mb:w-[94%] sm:w-[80%] md:w-[80%] mx-auto text-center mt-5 ' onClick={(e)=>{e.stopPropagation()}}>
           <HomeFilter filterClick={filterClick} setfilterClick={setfilterClick} />
        </div>
-       <div className='mx-auto rounded-xl  flex flex-row items-center  gap-10 w-[30vw]'>
+       <div className='mx-auto rounded-xl  flex flex-row items-center  gap-10 w-[30vw] mb:flex-col mb:gap-5'>
           <div>
-            <button style={{boxShadow:' 0px 3px 18px rgba(0, 0, 0, 0.2)'}} className='px-[34px] rounded-full text-white py-[12px] bg-primaryWeb'>Wanted</button>
+            <button style={{boxShadow:' 0px 3px 18px rgba(0, 0, 0, 0.2)'}} className='px-[34px] rounded-full text-white py-[12px] bg-primaryWeb mb:hidden'>Wanted</button>
+            <button  className='px-[34px]  py-[12px] border-[1px] border-[#717171] hidden mb:inline-block text-base2 text-[#717171] rounded-[10px]'>Wanted</button>
+
           </div>
-          <div>
-            <p className='text-base2 text-[#717171]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit Ut enim ad minim veniam</p>
+          <div className='w-72'>
+            <p className='text-base2 text-[#717171] mb:text-small text-center'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
           </div>
        </div>
 

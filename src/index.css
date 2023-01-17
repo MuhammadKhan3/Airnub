@@ -8,8 +8,13 @@ body {
   background-color: white;
   height: 100%;
   width: 100%;  
+  /* overflow: hidden; */
+  
   /* selection:bg-yellow-400 selection:text-white
   scrollbar-thin scrollbar-thumb-darkyellow   */
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .bodyColor{

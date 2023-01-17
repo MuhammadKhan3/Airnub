@@ -4,12 +4,17 @@ import Property from "../../components/property";
 import Header from "../../components/header";
 import HomeContent from "./homeContent";
 
-
 const Home=()=>{
     return (
     <div className="flex flex-col relative h-screen w-full ">
-       <HomeHeader/>
+      {/* <div className="mb:hidden">
+      </div>
+      <div> */}
+        <HomeHeader/>
        <HomeContent/>
+      {/* </div> */}
+
+
     </div>
         )
 }

@@ -5,7 +5,7 @@ const HomeFilter = ({filterClick,setfilterClick}) => {
      
   return (
   <section className='flex flex-col relative'>
-    <div className={` mb:hidden  border-[1px] hover:border-[#DDDDDD]  border-[#717171]  h-[5.3rem] rounded-full  flex flex-row items-center ${filterClick.length>0 ? 'border-[#DDDDDD]':''}`}>
+    <div className={` mb:hidden  border-[1px] hover:border-[#DDDDDD]    h-[5.3rem] rounded-full  flex flex-row items-center ${filterClick.length>0 ? 'border-[#717171]':''}`}>
        <div className={`flex-[3]  flex flex-col  text-start  rounded-full  outline-transparent  cursor-pointer z-20   ${filterClick==='location' ? 'bg-[#FFFFFF] outline outline-2 outline-primaryWeb ':'outline hover:outline-2 hover:outline-[#717171]'}`} onClick={()=>setfilterClick('location')}>
             <div className=' p-5  '>
                 <h3 className={` text-base2-bold ${filterClick==='location' ? 'text-primaryWeb':''}`}>Location</h3>
@@ -50,8 +50,8 @@ const HomeFilter = ({filterClick,setfilterClick}) => {
       </div>
     }
     </div>
-    <div className='bg-[#F7F7F7] rounded-[74px] overflow-hidden h-[67px]  hidden  w-[90%]  px-2 mb:flex mb:flex-row mb:items-center'>
-       <input type='text' className='bg-[#F7F7F7]  border-none outline-none ring-0 w-[90%] focus:ring-0 h-full text-base'/>
+    <div className='bg-[#F7F7F7] rounded-[74px] overflow-hidden h-[67px]  hidden  w-[100%]  px-2 mb:flex mb:flex-row mb:items-center'>
+       <input type='text' placeholder='Start your search' className='bg-[#F7F7F7]  border-none outline-none ring-0 w-[90%] focus:ring-0 h-full text-base'/>
        <FiSearch size={20} className=" border-[1px] border-[#C0C0C0]  p-2 w-[39px] h-[39px] rounded-full"/>
     </div>
   </section>

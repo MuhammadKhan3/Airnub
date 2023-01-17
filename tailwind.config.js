@@ -101,6 +101,24 @@ module.exports = {
           textAlign: 'left',
 
         }
+      ],
+      'responsive-heading':[
+        '76px',{
+          fontFamily: 'Poppins',
+          fontSize: '76px',
+          fontWeight: '275',
+          lineHeight: '65px',
+          letterSpacing: '-0.025em',
+          textAlign: 'left',
+          
+          fontFamily: 'Poppins',
+          fontSize: '76px',
+          fontWeight: '500',
+          lineHeight: '65px',
+          letterSpacing: '-0.025em',
+          textAlign: 'left'
+          
+        }
       ]
   },
     screens:{
