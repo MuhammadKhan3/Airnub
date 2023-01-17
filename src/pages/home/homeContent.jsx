@@ -39,10 +39,10 @@ const HomeContent = () => {
           </div>
        </div>
        
-       {/* <div className='inline-block mb:hidden'> */}
+       {/* <div className='inline-block mb:hidden'>
             <div className='flex flex-row items-center  justify-center max-w-full   w-[90%] h-fit  opacity-[0.4] -z-50 relative  mb:hidden'>
-                    {/* <img src={require('../../assets/footer/artOne.png')} className="basis-6/12 w-[50%] self-end     object-contain " alt="Art One"/> */}
-                    <img src={require('../../assets/footer/artTwo.PNG')} className="basis-6/12 w-[50%] self-center        object-contain " alt="Art Two"/>            {/* </div> */}
+                    <img src={require('../../assets/footer/artOne.png')} className="basis-6/12 w-[50%] self-end     object-contain " alt="Art One"/>
+                    <img src={require('../../assets/footer/artTwo.PNG')} className="basis-6/12 w-[50%] self-center        object-contain " alt="Art Two"/>            
             </div>
             <span className='border-b-[1px] border-[#C0C0C0] mt-8  w-full inline-block mb:hidden'></span>
             <div className='  h-16 mb:h-24 flex flex-row text-smallBold space-x-10 justify-end w-full items-center text-black mr-32 mb:hidden'>
@@ -59,7 +59,7 @@ const HomeContent = () => {
                 <MdKeyboardArrowUp size={20}/>
               </div>
           </div>
-       {/* </div>        */}
+       </div>        */}
     </section>)
 }
 
