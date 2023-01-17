@@ -35,14 +35,13 @@ const HomeContent = () => {
           <div className='w-96 mb:w-64'>
                 <p className='text-base2 text-[#717171] mb:text-small  text-left mb:text-center '>
                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-
                 </p>
           </div>
        </div>
        
        {/* <div className='inline-block mb:hidden'> */}
-            <div className='flex flex-row items-center  justify-center max-w-full   w-[90%] h-fit mix-blend-multiply opacity-[0.4] -z-50 relative  mb:hidden'>
-                    <img src={require('../../assets/footer/artOne.png')} className="basis-6/12 w-[50%] self-end     object-contain " alt="Art One"/>
+            <div className='flex flex-row items-center  justify-center max-w-full   w-[90%] h-fit  opacity-[0.4] -z-50 relative  mb:hidden'>
+                    {/* <img src={require('../../assets/footer/artOne.png')} className="basis-6/12 w-[50%] self-end     object-contain " alt="Art One"/> */}
                     <img src={require('../../assets/footer/artTwo.PNG')} className="basis-6/12 w-[50%] self-center        object-contain " alt="Art Two"/>            {/* </div> */}
             </div>
             <span className='border-b-[1px] border-[#C0C0C0] mt-8  w-full inline-block mb:hidden'></span>
