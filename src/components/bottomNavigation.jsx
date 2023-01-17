@@ -4,7 +4,7 @@ import {MdOutlineAddBox} from 'react-icons/md'
 const BottomNavigation = () => {
     const [menu,setmenu]=useState('');
   return (
-    <div className='border-t-[1px] border-[#DDDDDD] hidden mb:flex mb:flex-row justify-around  text-Xsmall relative  top-28'>
+    <div className='border-t-[1px] border-[#DDDDDD] hidden mb:flex mb:flex-row justify-around  text-Xsmall relative  top-20'>
         <div className={`flex flex-col p-5 cursor-pointer  ${menu==='post-ad' ? 'border-t border-primaryWeb text-primaryWeb': ''} `} onClick={()=>setmenu('post-ad')}>
            {menu==='post-ad' ?
               <img src={require('../assets/navigation/colorIcon/add.png')} className="w-[18px] h-[18px] mx-auto "/>

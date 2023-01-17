@@ -33,9 +33,9 @@ const HomeContent = () => {
             <a  className='px-[34px]  py-[12px] border-[1px] border-[#717171] hidden mb:inline-block text-base2 text-[#717171] rounded-[10px] hover:text-primaryWeb hover:border-primaryWeb'>Wanted</a>
           </div>
           <div className='w-96 mb:w-64'>
-                <p className='text-base2 text-[#717171] mb:text-small w-[30rem] text-left mb:text-center '>
+                <p className='text-base2 text-[#717171] mb:text-small  text-left mb:text-center '>
                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                   
+
                 </p>
           </div>
        </div>
