@@ -5,7 +5,7 @@
 body {
 
   font-family: 'Poppins', sans-serif;
-  background-color: white;
+  /* background-color: white; */
   height: 100%;
   width: 100%;  
   /* overflow: hidden; */
@@ -13,7 +13,7 @@ body {
   /* selection:bg-yellow-400 selection:text-white
   scrollbar-thin scrollbar-thumb-darkyellow   */
 }
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
 }
 
@@ -61,4 +61,4 @@ body::-webkit-scrollbar {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
