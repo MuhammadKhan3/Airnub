@@ -13,10 +13,8 @@ const HomeFilter = ({filterClick,setfilterClick}) => {
             </div>
        </div>
 
-       {filterClick==='location' ?
-       '':
-       <span className='border-r  pt-12 overflow-hidden  relative z-10 '></span>
-       }
+
+       <span className={`border-r  pt-12 overflow-hidden  relative z-10 ${filterClick==='location' ? 'border-transparent' :''} `}></span>
 
        <div className={`flex-[2]  flex flex-col  text-start  rounded-full  outline-transparent  cursor-pointer  z-20  ${filterClick==='property' ? 'bg-[#FFFFFF] outline outline-2 outline-primaryWeb ':'outline hover:outline-2 hover:outline-[#717171]'}`} onClick={()=>setfilterClick('property')}>
             <div className=' p-5  '>
@@ -24,19 +22,16 @@ const HomeFilter = ({filterClick,setfilterClick}) => {
                 <h3 className='text-base text-[#717171]'>Appartment</h3>
             </div>
        </div>
-       {filterClick==='property' ?
-       '':
-       <span className='border-r  pt-12 overflow-hidden box-border relative z-10 '></span>
-       }
+
+       <span className={`border-r  pt-12 overflow-hidden box-border relative z-10       ${filterClick==='property' ? 'border-transparent' :''} `}></span>
 
        <div className={`flex-0 p-6 pt-8 text-blue-50 rounded-full  outline-transparent  cursor-pointer  relative z-20 ${filterClick==='filter' ? 'outline  outline-2 outline-primaryWeb':'outline hover:outline-2 hover:outline-[#717171]'}`} onClick={()=>setfilterClick('filter')}>
          <img src={require('../assets/posts/filter.png')}/>
        </div>
-       {filterClick==='filter' ?
-       '':
+ 
 
-       <span className='border-r  pt-12 overflow-hidden box-border relative z-10 '></span>
-       }
+       <span className={`border-r  pt-12 overflow-hidden box-border relative z-10  ${filterClick==='filter' ? 'border-transparent' :''}`}></span>
+
        <div className={`flex-0 p-6 pt-[1.30rem] text-primaryWeb    rounded-full  outline-transparent  cursor-pointer   z-20 ${filterClick==='search' ? 'outline   outline-2 outline-primaryWeb' :'outline hover:outline-2 hover:outline-primaryWeb'}`} onClick={()=>setfilterClick('search')} >
          <BiSearch  size={34} className=' h-full w-full'/>
        </div>
