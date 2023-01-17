@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import HomeFilter from '../../components/homeFilter';
 import {BiGlobe} from 'react-icons/bi'
 import {MdKeyboardArrowUp} from 'react-icons/md'
+import {MdOutlineAddBox} from 'react-icons/md'
 import SearchType from '../../components/searchType';
+import './homecontent.css'
 
 const HomeContent = () => {
   const [propertyType,setpropertyType]=useState('buy');
@@ -10,49 +12,55 @@ const HomeContent = () => {
   
 
   return (
-    <section className='lg:bg-gradient-to-tr md:bg-gradient-to-tr xl:bg-gradient-to-tr 2xl:bg-gradient-to-tr 3xl:bg-gradient-to-tr  from-pink-50 via-pink-50   to-blue-50 mb:bg-white  sm:bg-white   mix-blend-multiply       flex flex-col items-center justify-center w-full   h-fit relative text-black' onClick={(e)=>{ console.log('bublin'); setfilterClick('')}}>
-       <div className='h-fit   mt-28 text-center'>
-       
-         <h1 className='text-bigHeading h-fit w-[62.5%] mb:w-[90%] mx-auto text-black  mb:text-[#C0C0C0]  font-light mb:text-responsive-heading'>
+    <section className=' xl:bg-gradient-to-tr 2xl:bg-gradient-to-tr 3xl:bg-gradient-to-tr  lg:bg-gradient-to-tr  from-pink-50 via-pink-50   to-blue-50 mb:bg-white  sm:bg-white   mix-blend-multiply       flex flex-col items-center justify-center      text-black  h-fit w-full zoom absolute top-[110px]  mb:relative mb:top-0' onClick={(e)=>{ console.log('bublin'); setfilterClick('')}} >
+       <div className='h-fit   mt-28 mb:mt-8 text-center '>       
+         <h1 className='text-bigHeading h-fit w-[50.5%] mx-auto   text-left mb:w-[80%]  text-black  mb:text-[#C0C0C0]  font-light mb:text-responsive-heading'>
            Discover a <span className='text-primaryWeb'>place</span> you’ll love to live
          </h1>
        </div>
+
        <div className='h-fit  mx-auto mt-8' >
         <SearchType propertyType={propertyType} setpropertyType={setpropertyType}/>
        </div>
-       <div className='h-full w-[50%] mb:w-[94%] sm:w-[80%] md:w-[80%] mx-auto text-center mt-5 ' onClick={(e)=>{e.stopPropagation()}}>
+       
+       <div className='h-fit w-[50%] mb:w-[94%] sm:w-[80%] md:w-[80%] mx-auto text-center mt-5 ' onClick={(e)=>{e.stopPropagation()}}>
           <HomeFilter filterClick={filterClick} setfilterClick={setfilterClick} />
        </div>
-       <div className='mx-auto rounded-xl  flex flex-row items-center  gap-10 w-[30vw] mb:flex-col mb:gap-5'>
+       
+       <div className='mx-auto rounded-xl mt-48 mb:mt-24 flex flex-row items-center  gap-10 w-[30vw] mb:flex-col mb:gap-5'>
           <div>
-            <button style={{boxShadow:' 0px 3px 18px rgba(0, 0, 0, 0.2)'}} className='px-[34px] rounded-full text-white py-[12px] bg-primaryWeb mb:hidden'>Wanted</button>
-            <button  className='px-[34px]  py-[12px] border-[1px] border-[#717171] hidden mb:inline-block text-base2 text-[#717171] rounded-[10px]'>Wanted</button>
-
+            <a style={{boxShadow:' 0px 3px 18px rgba(0, 0, 0, 0.2)'}} className='px-[34px] rounded-full text-white py-[12px] bg-primaryWeb mb:hidden cursor-pointer'>Wanted</a>
+            <a  className='px-[34px]  py-[12px] border-[1px] border-[#717171] hidden mb:inline-block text-base2 text-[#717171] rounded-[10px] hover:text-primaryWeb hover:border-primaryWeb'>Wanted</a>
           </div>
-          <div className='w-72'>
-            <p className='text-base2 text-[#717171] mb:text-small text-center'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+          <div className='w-96 mb:w-64'>
+                <p className='text-base2 text-[#717171] mb:text-small w-[30rem] text-left mb:text-center '>
+                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                   
+                </p>
           </div>
        </div>
-
-       <div className='flex flex-row items-center  justify-center max-w-full   w-[90%] h-fit mix-blend-multiply opacity-[0.4] -z-50 relative'>
-              <img src={require('../../assets/footer/artOne.png')} className="basis-6/12 w-[50%] self-end     object-contain " alt="Art One"/>
-              <img src={require('../../assets/footer/artTwo.PNG')} className="basis-6/12 w-[50%] self-center        object-contain " alt="Art Two"/>            {/* </div> */}
-       </div>
-       <span className='border-b-[1px] border-[#C0C0C0] mt-8  w-full'></span>
-       <div className='h-44 flex flex-row text-smallBold space-x-10 justify-end w-full items-center text-black mr-32'>
-         <div className='flex flex-row items-center space-x-2'>
-            <BiGlobe size={20}/>
-            <p className=''>English (US)</p>
-         </div>
-         <div className='flex flex-row items-center space-x-2'>
-            <p>$</p>
-            <p className='text-smallBold'>USD</p>
-         </div>
-         <div className='flex flex-row items-center'>
-           <p>Support & resources</p>
-           <MdKeyboardArrowUp size={20}/>
-         </div>
-       </div>
+       
+       {/* <div className='inline-block mb:hidden'> */}
+            <div className='flex flex-row items-center  justify-center max-w-full   w-[90%] h-fit mix-blend-multiply opacity-[0.4] -z-50 relative  mb:hidden'>
+                    <img src={require('../../assets/footer/artOne.png')} className="basis-6/12 w-[50%] self-end     object-contain " alt="Art One"/>
+                    <img src={require('../../assets/footer/artTwo.PNG')} className="basis-6/12 w-[50%] self-center        object-contain " alt="Art Two"/>            {/* </div> */}
+            </div>
+            <span className='border-b-[1px] border-[#C0C0C0] mt-8  w-full inline-block mb:hidden'></span>
+            <div className='  h-16 mb:h-24 flex flex-row text-smallBold space-x-10 justify-end w-full items-center text-black mr-32 mb:hidden'>
+              <div className='flex flex-row items-center space-x-2'>
+                  <BiGlobe size={20}/>
+                  <p className=''>English (US)</p>
+              </div>
+              <div className='flex flex-row items-center space-x-2'>
+                  <p>$</p>
+                  <p className='text-smallBold'>USD</p>
+              </div>
+              <div className='flex flex-row items-center'>
+                <p>Support & resources</p>
+                <MdKeyboardArrowUp size={20}/>
+              </div>
+          </div>
+       {/* </div>        */}
     </section>)
 }
 

@@ -3,18 +3,15 @@ import NavigationMenu from "../../components/navigationMenu";
 import Property from "../../components/property";
 import Header from "../../components/header";
 import HomeContent from "./homeContent";
-
+import BottomNavigation from "../../components/bottomNavigation";
 const Home=()=>{
     return (
-    <div className="flex flex-col relative h-screen w-full ">
-      {/* <div className="mb:hidden">
-      </div>
-      <div> */}
+    <div className="flex flex-col relative h-screen w-full " >
         <HomeHeader/>
-       <HomeContent/>
-      {/* </div> */}
-
-
+        <HomeContent/>
+        {/* <div className="mt-4"> */}
+          <BottomNavigation/>
+        {/* </div> */}
     </div>
         )
 }

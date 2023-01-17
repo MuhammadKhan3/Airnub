@@ -119,6 +119,18 @@ module.exports = {
           textAlign: 'left'
           
         }
+      ],
+      
+      "Xsmall":[
+        '10px',
+        {
+        fontFamily: 'Poppins',
+        fontSize: '10px',
+        fontWeight: '400',
+        lineHeight: '15px',
+        letterSpacing: '-0.025em',
+        textAlign: 'center',
+        }
       ]
   },
     screens:{
@@ -135,7 +147,7 @@ module.exports = {
       'xl': {'min': '1280px', 'max': '1535px'},
       // => @media (min-width: 1280px and max-width: 1535px) { ... }
 
-      '2xl': {'min': '1636px'},
+      '2xl': {'min': '1536px','max': '1735px'},
 
       '3xl': {'min': '1736px'},
 
