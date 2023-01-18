@@ -9,6 +9,9 @@ const Home=()=>{
     <div className="flex flex-col relative h-[100vh]  w-full" >
         <HomeHeader/>
         <HomeContent/>
+        <div>
+          ldkfj
+        </div>
         {/* <div className="mt-4"> */}
           {/* <BottomNavigation/> */}
         {/* </div> */}
