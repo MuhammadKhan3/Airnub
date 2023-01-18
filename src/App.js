@@ -5,7 +5,7 @@ import Home from './pages/home/home';
 function App() {
   return (
     // h-[90vh]
-  <div className='w-full h-screen   '>
+  <div className='w-full h-[80vh]   '>
     <Home/>
   </div>
 
