@@ -12,7 +12,8 @@ const HomeContent = () => {
   
 
   return (
-    <section className=' xl:bg-gradient-to-tr 2xl:bg-gradient-to-tr 3xl:bg-gradient-to-tr  bg-gradient-to-tr  from-pink-50 via-pink-50   to-blue-50 mix-blend-multiply             text-black  h-[90%]   w-full zoom    bg-blend-multiply absolute top-[15vh] mb:relative mb:top-0 mb:h-full ' onClick={(e)=>{ console.log('bublin'); setfilterClick('')}} >
+    // absolute top-[15vh]
+    <section className=' xl:bg-gradient-to-tr 2xl:bg-gradient-to-tr 3xl:bg-gradient-to-tr  bg-gradient-to-tr  from-pink-50 via-pink-50   to-blue-50 mix-blend-multiply             text-black  h-[90%]   w-full zoom    bg-blend-multiply  mb:relative mb:top-0 mb:h-full ' onClick={(e)=>{ console.log('bublin'); setfilterClick('')}} >
     <div className='flex flex-col items-center justify-center mt-5 sm:mt-12 mb:mt-10'>
        <div className='h-fit   mt-28 mb:mt-[3rem] text-center '>       
          <h1 className='text-bigHeading h-fit w-[50.5%] mx-auto    text-justify mb:w-[310px] sm:w-[310px]  text-black  mb:text-[#C0C0C0]  font-light mb:text-responsive-heading'>
@@ -46,7 +47,7 @@ const HomeContent = () => {
                     <img src={require('../../assets/footer/artTwo.PNG')} className="basis-6/12 w-[50%] self-center        object-contain " alt="Art Two"/>            
             </div>
             <span className='border-b-[1px] border-[#C0C0C0] mt-8  w-full inline-block mb:hidden'></span>
-            <div className='  h-16 mb:h-24 flex flex-row text-smallBold space-x-10 justify-end w-full items-center text-black mr-32 mb:hidden'>
+            <div className='  mb:h-24 flex flex-row text-smallBold space-x-10 justify-end w-full items-center text-black mr-32 mb:hidden pt-4'>
               <div className='flex flex-row items-center space-x-2'>
                   <BiGlobe size={20}/>
                   <p className=''>English (US)</p>
