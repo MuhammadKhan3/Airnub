@@ -104,18 +104,12 @@ module.exports = {
       ],
       'responsive-heading':[
         '57px',{
-          fontFamily: 'Poppins',
+          fontFamily: 'Poppins sans-serif',
           fontSize: '57px',
           fontWeight: '275',
           lineHeight: '5rem',
           textAlign: 'left',
-          
-          // fontFamily: 'Poppins',
-          // fontSize: '76px',
-          // fontWeight: '500',
-          // lineHeight: '5rem',
-          // letterSpacing: '-0.025em',
-          // textAlign: 'left'
+        
           
         }
       ],

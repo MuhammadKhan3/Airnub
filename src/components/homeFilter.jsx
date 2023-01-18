@@ -7,7 +7,7 @@ const HomeFilter = ({filterClick,setfilterClick}) => {
   <section className='flex flex-col relative'>
     <div className={` mb:hidden  border-[1px] hover:border-[#DDDDDD]    h-[5.3rem] rounded-full  flex flex-row items-center transition-all ${filterClick.length>0 ? '':'border-[#717171]'}`}>
        <div className={`flex-[3]  flex flex-col  text-start  rounded-full  outline-transparent  cursor-pointer z-20   ${filterClick==='location' ? 'bg-[#FFFFFF] outline outline-2 outline-primaryWeb ':'outline hover:outline-2 hover:outline-[#717171]'}`} onClick={()=>setfilterClick('location')}>
-            <div className=' p-5  '>
+            <div className=' p-5 pl-9  '>
                 <h3 className={` text-base2-bold ${filterClick==='location' ? 'text-primaryWeb':''}`}>Location</h3>
                 <h3 className='text-base text-[#717171] sm:text-small'>Bahria Town,Islamabad</h3>
             </div>
