@@ -10,7 +10,7 @@ const Home=()=>{
         <HomeHeader/>
         <HomeContent/>
         {/* <div className="mt-4"> */}
-          <BottomNavigation/>
+          {/* <BottomNavigation/> */}
         {/* </div> */}
     </div>
         )
