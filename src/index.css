@@ -2,21 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* html{
+  height: 100vmax;
+  width: 100vmax;
+} */
 body {
 
   font-family: 'Poppins', sans-serif;
-  background-color: white;
-  height: 100%;
+  /* background-color: blue; */
   width: 100%;
-  @apply
-  h-screen  
+  height: 100vh;
   /* overflow: hidden; */
   
   /* selection:bg-yellow-400 selection:text-white
   scrollbar-thin scrollbar-thumb-darkyellow   */
 }
 body::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
 }
 
 .bodyColor{
