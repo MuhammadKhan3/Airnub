@@ -6,10 +6,13 @@
   height: 100vmax;
   width: 100vmax;
 } */
-html {
+* { 
   height: 100%;
   background-color: white;
 }
+/* html {
+
+} */
 body {
 
   font-family: 'Poppins', sans-serif;
