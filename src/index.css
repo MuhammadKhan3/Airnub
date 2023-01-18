@@ -20,7 +20,7 @@ body {
   scrollbar-thin scrollbar-thumb-darkyellow   */
 }
 body::-webkit-scrollbar {
-  /* display: none; */
+  display: none;
 }
 
 .bodyColor{
