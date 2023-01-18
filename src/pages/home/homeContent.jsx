@@ -12,7 +12,7 @@ const HomeContent = () => {
   
 
   return (
-    <section className=' xl:bg-gradient-to-tr 2xl:bg-gradient-to-tr 3xl:bg-gradient-to-tr  bg-gradient-to-tr  from-pink-50 via-pink-50   to-blue-50 mix-blend-multiply             text-black  h-[145vh] min-h-full  mb:h-[150vh] w-full zoom   mb:relative mb:top-0 bg-blend-multiply absolute top-[15vh]' onClick={(e)=>{ console.log('bublin'); setfilterClick('')}} >
+    <section className=' xl:bg-gradient-to-tr 2xl:bg-gradient-to-tr 3xl:bg-gradient-to-tr  bg-gradient-to-tr  from-pink-50 via-pink-50   to-blue-50 mix-blend-multiply             text-black  h-[145vh] min-h-full  mb:h-[80vh] w-full zoom   mb:relative mb:top-0 bg-blend-multiply absolute top-[15vh]' onClick={(e)=>{ console.log('bublin'); setfilterClick('')}} >
     <div className='flex flex-col items-center justify-center mt-5 sm:mt-12 mb:mt-10'>
        <div className='h-fit   mt-28 mb:mt-[3rem] text-center '>       
          <h1 className='text-bigHeading h-fit w-[50.5%] mx-auto    text-justify mb:w-[310px] sm:w-[310px]  text-black  mb:text-[#C0C0C0]  font-light mb:text-responsive-heading'>
