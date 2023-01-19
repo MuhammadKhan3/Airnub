@@ -6,7 +6,7 @@ function App() {
   return (
     // h-[90vh]
   <div className='w-full h-[100%] bg-yellow-300   '>
-    {/* <Home/> */}
+    <Home/>
   </div>
 
   );
