@@ -8,7 +8,7 @@ const Home=()=>{
     return (
     <div className="flex flex-col relative h-screen bg-blue-300  mb:h-[82.7vh]   w-full" >
         <HomeHeader/>
-        <HomeContent/>        
+        {/* <HomeContent/>         */}
         {/* <div className="mt-4"> */}
           {/* <BottomNavigation/> */}
         {/* </div> */}
