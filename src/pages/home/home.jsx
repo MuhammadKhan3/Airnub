@@ -6,7 +6,7 @@ import HomeContent from "./homeContent";
 import BottomNavigation from "../../components/bottomNavigation";
 const Home=()=>{
     return (
-    <div className="flex flex-col relative h-screen bg-blue-300  mb:h-[82.7vh]   w-full" >
+    <div className="flex flex-col relative h-screen   mb:h-[92.7vh]   w-full" >
         <HomeHeader/>
         <HomeContent/>        
         {/* <div className="mt-4"> */}
