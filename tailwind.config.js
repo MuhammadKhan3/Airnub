@@ -69,24 +69,25 @@ module.exports = {
       ],
       'subTitle':
       [
-        '22px',{
+        '1em',{
           fontFamily: 'Poppins',
-          fontSize: '22px',
+          fontSize: '1em',
           fontWeight: '600',
           lineHeight: '33px',
           letterSpacing: '-0.025em',
           textAlign: 'center',
         }
       ],
+
       'bigHeading':[
-        '48px',{
-          fontFamily: 'Poppins',
+        '3em',{
+          fontFamily: 'Poppins sans-serif',
           fontStyle: 'normal',
-          fontWeight: '500',
-          fontSize: '48px',
-          lineHeight: '60px',
+          fontWeight: '500 !important',
+          fontSize: '3em',
+          lineHeight: '1em',
           textAlign: 'center',
-          letterSpacing: '-0.025em'
+          letterSpacing: ''
         }
         
       ],

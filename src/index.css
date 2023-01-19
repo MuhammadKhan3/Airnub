@@ -13,17 +13,18 @@
 body {
 
   font-family: 'Poppins', sans-serif;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: white;
+  font-size: 100%;
   /* overflow: hidden; */
   
   /* selection:bg-yellow-400 selection:text-white
   scrollbar-thin scrollbar-thumb-darkyellow   */
 }
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .bodyColor{
   background-color: 
