@@ -1,10 +1,8 @@
 .zoom{
-    zoom:62.5%;
-    -moz-zoom:62.6%;
+  zoom: 90%;
 }
 
 @media screen and (max-width: 639px) {
     .zoom{
-        zoom: 90%;
     }
   }

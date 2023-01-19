@@ -8,8 +8,9 @@ const Home=()=>{
     return (
     <div className="flex flex-col relative h-screen  mb:h-[92.7vh]   w-full" >
         <HomeHeader/>
-        <HomeContent/>        {/* <div className="mt-4"> */}
-          <BottomNavigation/>
+        <HomeContent/>        
+        {/* <div className="mt-4"> */}
+          {/* <BottomNavigation/> */}
         {/* </div> */}
     </div>
         )
