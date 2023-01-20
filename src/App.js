@@ -8,7 +8,6 @@ function App() {
   <div className='w-full h-[100%] '>
     <Home/>
   </div>
-
   );
 }
 

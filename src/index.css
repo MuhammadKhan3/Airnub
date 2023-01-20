@@ -22,9 +22,9 @@ body {
   /* selection:bg-yellow-400 selection:text-white
   scrollbar-thin scrollbar-thumb-darkyellow   */
 }
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
-} */
+}
 
 .bodyColor{
   background-color: 
