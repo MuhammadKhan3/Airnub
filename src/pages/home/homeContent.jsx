@@ -44,7 +44,7 @@ const HomeContent = () => {
         <SearchType propertyType={propertyType} setpropertyType={setpropertyType}/>
        </div>       
        
-       <div className='h-fit w-[50%] sm:w-[70%] md:w-[70%] mx-auto text-center mt-5 ' onClick={(e)=>{e.stopPropagation()}}>
+       <div className='h-fit w-[50%] mb:w-[90%] sm:w-[70%] md:w-[70%] mx-auto text-center mt-5 ' onClick={(e)=>{e.stopPropagation()}}>
                <HomeFilter filterClick={filterClick} setfilterClick={setfilterClick} />
        </div>
        
