@@ -1,10 +1,10 @@
 import React from 'react'
 import PropertyPost from './propertyPost'
 
-const Property = () => {
-  return (<div className='p-5'>
+const Properties = () => {
+  return (<div className='w-[91%] mx-auto'>
     <PropertyPost/>
   </div>)
 }
 
-export default Property
+export default Properties;

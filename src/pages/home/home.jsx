@@ -1,6 +1,6 @@
 import HomeHeader from "./homeHeader";
 import NavigationMenu from "../../components/navigationMenu";
-import Property from "../../components/property";
+import Property from "../../components/properties";
 import Header from "../../components/header";
 import HomeContent from "./homeContent";
 import BottomNavigation from "../../components/bottomNavigation";

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {BiSearch} from 'react-icons/bi'
 import {FiSearch} from 'react-icons/fi'
+import { NavLink } from 'react-router-dom'
 const HomeFilter = ({filterClick,setfilterClick}) => {
      
   return (
@@ -31,9 +32,11 @@ const HomeFilter = ({filterClick,setfilterClick}) => {
  
        <span className={`border-r  pt-12 overflow-hidden box-border relative z-10  ${filterClick==='filter' ? 'border-transparent' :''}`}></span>
        {/* lg:h-full xl:h-[95%] w-[5rem] sm:w-[4.2rem] md:w-[4.2rem] xl:w-[4.9rem] 3xl:w-[5.2rem]  2xl:h-full */}
-       <div className={`flex-0 h-full  flex flex-row justify-center  text-primaryWeb    rounded-full  outline-transparent  cursor-pointer   z-20 ${filterClick==='search' ? 'outline   outline-2 outline-primaryWeb' :'outline hover:outline-2 hover:outline-primaryWeb'}`} onClick={()=>setfilterClick('search')} >
-          <BiSearch   className=' h-full w-[40%]'/>
-       </div>
+       <NavLink to='/property' className='h-full'>
+          <div className={`flex-0 h-full  flex flex-row justify-center  text-primaryWeb    rounded-full  outline-transparent  cursor-pointer   z-20 ${filterClick==='search' ? 'outline   outline-2 outline-primaryWeb' :'outline hover:outline-2 hover:outline-primaryWeb'}`} onClick={()=>setfilterClick('search')} >
+              <BiSearch   className=' h-full w-[40%]'/>
+          </div>
+       </NavLink>
     </div>
 
     <div className='mb:hidden inline-block'>

@@ -150,6 +150,7 @@ module.exports = {
       'primaryWeb':'#C49A50',
       'midGray':'#DDDDDD',
       'grayIcon':'#717171',
+      'secondaryWeb':"#717171",
     },
 
     extend: {},
