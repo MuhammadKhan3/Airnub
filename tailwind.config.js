@@ -5,6 +5,13 @@ module.exports = {
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
+
+    extend: {
+      backgroundImage: {
+        'hero-pattern':
+        "linear-gradient(180deg, rgba(196, 154, 80, 0.28) 0%, rgba(217, 217, 217, 0) 100%)"
+      }
+    },
     fontSize: {
       'base': ['16px', {
 //styleName: Base;
@@ -153,7 +160,6 @@ module.exports = {
       'secondaryWeb':"#717171",
     },
 
-    extend: {},
   },
   plugins: [
     require('tailwind-scrollbar'),

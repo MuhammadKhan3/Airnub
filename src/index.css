@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
   background-color: 
   linearGradient(to left top, rgb(255, 228, 230), rgb(204, 251, 241));
 }
-.slick-dots li.slick-active button:before {
+/* .slick-dots li.slick-active button:before {
   color:White !important;
 }
 
@@ -29,14 +29,36 @@ body::-webkit-scrollbar {
 
   top:90%;
 }
-.slick-dots li button:before{
-  color: white !important;
-  opacity: 0.6 !important;
-  font-size: 7px !important;
-  height: 30px ;
-  width: 30px;
-}
 
+*/
+
+
+.slick-dots{
+  filter: drop-shadow(0px 3px 18px rgba(0, 0, 0, 0.2));
+  
+}
+.slick-dots li.slick-active button:before {
+  width: 8.8px;
+  height: 8.8px;
+  color: #EBEBEB !important;
+
+}
+.slick-dots li button:before{
+  /* font-size: 7px !important; */
+  color:  #D9D9D9 !important;
+  height: 5.28px !important;
+  width: 5.8px !important;
+  opacity: 100 !important;
+}
+.slick-dots li{
+  margin: 1px !important;
+  opacity: 100 !important;
+
+}
+.slick-dots{
+  width: 88px;
+  top: 80% !important;
+}
 .slick-slide>div{
   padding: 0px !important;
 }
