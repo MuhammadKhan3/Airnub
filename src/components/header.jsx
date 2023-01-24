@@ -17,15 +17,14 @@ const Header=()=>{
    const [userSwitch,setuserSwitch]=useState('buy');
    const [filter,setfilter]=useState('');
 return(
-   <section className='relative  mx-auto border-b-[1px]'>
-      {/* main header */}
-      <div className='flex flex-row  items-center  justify-between   h-full relative  w-[90%] mx-auto'>
+   <section className='relative  mx-auto border-b-[1px] w-full'>
+   
+      <div className='flex flex-row  items-center  w-[90%] justify-between    h-full relative   mx-auto'>
 
-               <div className={`flex flex-row grow  items-center justify-between   !h-[80px] bg-white z-30 transition-all ${activeheader ? 'bg-opacity-0 hidden' :'bg-opacity-100 visible '}`}>
+               <div className={`flex flex-row grow w-full   items-center  justify-between    !h-[80px] bg-white z-30 transition-all ${activeheader ? 'bg-opacity-0 hidden' :'bg-opacity-100 visible'}`}>
                      <div className=' h-[26.22px] '>
                                  <img src={require('../assets/posts/logo.png')} className="logo"/>
-                     </div>                       
-
+                     </div>                                            
                      <div className=' border-[1px] border-primaryWeb flex flex-row items-center  p-2 pl-8 py-3 rounded-3xl space-x-6 text-smallBold cursor-pointer  transition-all hover:shadow-lg ' onClick={()=>setheader(!activeheader)}>
                         <div>
                            Anywhere
@@ -51,9 +50,10 @@ return(
                            <IoPersonCircle size='30'  className=' text-[#DDDDDD] text-[100%] max-w-[30px]'/>
                         </div>
                      </div>
-               </div>
+               </div>      
+      </div>
 
-               <div className={` w-full h-screen    bg-gray-800  bg-opacity-20 transition-all ease-in-out  duration-300 delay-100   absolute z-50  ${activeheader ?  'opacity-100  top-0 visible':'opacity-0  -top-96 invisible'}`} onClick={(e)=>{e.stopPropagation(); console.log('parent') }}>
+      <div className={` w-full h-screen    bg-gray-800  bg-opacity-20 transition-all ease-in-out  duration-300 delay-100   absolute z-50  ${activeheader ?  'opacity-100  top-0 visible':'opacity-0  -top-96 invisible'}`} onClick={(e)=>{e.stopPropagation(); console.log('parent') }}>
                   <div className={` flex flex-row justify-between items-center border-b-[1px]  w-full p-2 bg-white  `} onClick={(e)=>{e.stopPropagation(); console.log('child') }}>            
                         <div className=' p-4 h-[26.22px]'>
                            <img src={require('../assets/posts/logo.png')} className="logo"/>
@@ -78,11 +78,8 @@ return(
                                        <GoSearch size="14" />
                                     </div>
                                  </div>
-
                               </div>
-                        </div>
-         
-                     
+                        </div>                     
                   </div>
 
                   {filter==='location' ?
@@ -274,8 +271,6 @@ return(
                                  </div>
                   </div>}       
                </div>
-      
-      </div>
    </section>
 );
 }

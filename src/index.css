@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
 
 .slick-dots{
   filter: drop-shadow(0px 3px 18px rgba(0, 0, 0, 0.2));
-  
+  height: fit-content;  
 }
 .slick-dots li.slick-active button:before {
   width: 8.8px;
@@ -49,9 +49,10 @@ body::-webkit-scrollbar {
   height: 5.28px !important;
   width: 5.8px !important;
   opacity: 100 !important;
+
 }
 .slick-dots li{
-  margin: 1px !important;
+  margin: 0px !important;
   opacity: 100 !important;
 
 }

@@ -8,8 +8,7 @@ module.exports = {
 
     extend: {
       backgroundImage: {
-        'hero-pattern':
-        "linear-gradient(180deg, rgba(196, 154, 80, 0.28) 0%, rgba(217, 217, 217, 0) 100%)"
+        'hero-pattern':"linear-gradient(180deg, rgba(196, 154, 80, 0.28) 0%, rgba(217, 217, 217, 0) 100%)"
       }
     },
     fontSize: {

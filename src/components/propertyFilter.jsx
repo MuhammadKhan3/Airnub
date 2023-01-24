@@ -5,27 +5,29 @@ const PropertyFilter = () => {
   const list=[
     {
       name:
-      "bahria Town",
+      "Bahria Town Islamabad",
     },
     {
       name:
-      "Model Town",
+      "House",
     },
     {
       name:
-      "Garden Town",
+      "Sale",
     },
     {
       name:
-      "DHA",
+      "10 - 20 Lacs PKR",
     },
     {
       name:
-      "Wapda Town",
+      "10 Marla - 2 Kanal",
     },
     {
       name:
-      "Johar Town"
+      "1-4 Beds"
+    },{
+      name:"1-4 Baths"
     }
   ]
 
@@ -40,7 +42,7 @@ const PropertyFilter = () => {
             return <div className='group' key={i+1}>
 
             <li 
-            className={`rounded-[39px] border-[1px]   flex flex-row items-center gap-4  w-fit  py-[10px] px-[16px] cursor-pointer transition-all    ${filterId===i ? 'border-primaryWeb' :'border-[#717171] group-hover:border-black'}`}              
+            className={`rounded-[39px] border-[1px]   flex flex-row items-center gap-[10px]  w-fit  py-[10px] px-[16px] cursor-pointer transition-all    ${filterId===i ? 'border-primaryWeb' :'border-[#717171] group-hover:border-black'}`}              
                 onClick={(e)=>{
                       setFilterId(i)
                       e.currentTarget.firstChild
