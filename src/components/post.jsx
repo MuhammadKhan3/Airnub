@@ -58,8 +58,6 @@ const Post = ({images}) => {
 
                        }}
                        onMouseLeave={(e)=>{
-                        console.log('outer');
-
                          e.target.style.background=` #DDDDDD url(${image}) no-repeat`
                          e.target.style.width="100%"
                          e.target.style.height="100%";
