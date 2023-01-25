@@ -131,7 +131,21 @@ module.exports = {
         letterSpacing: '-0.025em',
         textAlign: 'center',
         }
+      ],
+      "Title":[
+        "26px",
+        {
+          fontFamily: 'Poppins',
+          fontSize: '26px',
+          fontWeight: '600',
+          lineHeight: '30px',
+          letterSpacing: '-0.025em',
+          textAlign: 'left'
+        }
       ]
+
+
+
   },
     screens:{
       'mb':{'min': '250px', 'max': '639px'},
@@ -166,7 +180,8 @@ module.exports = {
     require('@tailwindcss/line-clamp'),
     require("daisyui"),
     require('@tailwindcss/typography'),
-    require("tailwind-gradient-mask-image")
+    require("tailwind-gradient-mask-image"),
+    require('tailwind-scrollbar-hide')
   ],
   variants: {
     scrollbar: ['rounded']

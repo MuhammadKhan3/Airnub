@@ -32,12 +32,10 @@ const PropertyFilter = () => {
   ]
 
   return (
-  <section   style={{background: '#FFFFFF',boxShadow: '0px 3px 10px rgba(0, 0, 0, 0.1)'}} >
-   <div className="h-[78px] flex flex-row justify-between w-[90%] mx-auto ">
-
+  <section className='bg-[#FFFFFF] overflow-auto no-scrollbar'   style={{boxShadow: '0px 3px 10px rgba(0, 0, 0, 0.1)'}} >
+   <div className="h-[78px] flex flex-row justify-between w-[90%]  no-scrollbar  mx-auto sm:w-[1300px] mb:w-[1300px] overflow-auto">
     <div  className=''>
-
-       <ul className='list-none  relative top-4 flex flex-row gap-2 '>
+       <ul className='list-none  relative top-4 flex flex-row gap-2  sm:w-[1200px] mb:w-[1200px] '>
           {list.map((data,i)=>{
             return <div className='group' key={i+1}>
 

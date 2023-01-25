@@ -16,7 +16,7 @@ const HomeHeader = () => {
   return (<section className='flex flex-col  relative text-black  mb:hidden'>
           <div className={`flex flex-row justify-between items-center border-b-[1px] p-2 !h-[80px] bg-white z-30 transition-all ${activeheader ? 'bg-opacity-0 hidden' :'bg-opacity-100 visible '}`}>
          
-         <div className='!ml-16 p-4 h-[26.22px]'>
+         <div className='!ml-16  h-[26.22px]'>
                <img src={require('../../assets/posts/logo.png')} className="logo"/>
          </div>
 

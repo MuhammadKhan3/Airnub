@@ -11,6 +11,7 @@ import {HiOutlineHomeModern} from 'react-icons/hi2'
 import './header.css'
 import { useState } from 'react';
 import {FiSearch} from 'react-icons/fi'
+import { NavLink } from 'react-router-dom';
 const Header=()=>{
    const [activeheader,setheader]=useState(false);
    
@@ -22,9 +23,11 @@ return(
       <div className='flex flex-row  items-center  w-[90%] justify-between    h-full relative   mx-auto'>
 
                <div className={`flex flex-row grow w-full   items-center  justify-between    !h-[80px] bg-white z-30 transition-all ${activeheader ? 'bg-opacity-0 hidden' :'bg-opacity-100 visible'}`}>
-                     <div className=' h-[26.22px] '>
-                                 <img src={require('../assets/posts/logo.png')} className="logo"/>
-                     </div>                                            
+                     <NavLink to='/'>
+                        <div className=' h-[26.22px] '>
+                                    <img src={require('../assets/posts/logo.png')} className="logo"/>
+                        </div>                                            
+                     </NavLink>
                      <div className=' border-[1px] border-primaryWeb flex flex-row items-center  p-2 pl-8 py-3 rounded-3xl space-x-6 text-smallBold cursor-pointer  transition-all hover:shadow-lg ' onClick={()=>setheader(!activeheader)}>
                         <div>
                            Anywhere

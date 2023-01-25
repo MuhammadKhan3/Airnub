@@ -8,11 +8,12 @@ import ImageOne from '../assets/posts/1.jpg'
 import Bed from '../assets/posts/bed.png';
 import Bath from '../assets/posts/bath.png';
 import Area from '../assets/posts/area.png';
-
+import { NavLink } from "react-router-dom";
 
 
 
 const Post = ({images}) => {
+    
     const customeSlider=React.createRef();
     const [next,setnext]=useState(1);
     const [item,setitem]=useState([1,2,3,4,5,6]);
@@ -36,12 +37,14 @@ const Post = ({images}) => {
 
       };
       console.log(images)
-  return (<div className="group relative h-[378px] w-full     cursor-pointer group">
-    <Slider ref={customeSlider} {...settings} className="h-[245px] group-hover:outline group-hover:outline-primaryWeb group-hover:outline-offset-2 group-hover:outline-2 rounded-[15px] overflow-hidden w-full !p-0 relative "  >
+  return (
+
+  <div className="group relative h-[378px] w-full     cursor-pointer group" onClick={()=>{}}>
+    <NavLink to='/property/1'>
+     <Slider ref={customeSlider} {...settings} className="h-[245px]  group-hover:outline group-hover:outline-primaryWeb group-hover:outline-offset-2 group-hover:outline-2 rounded-[15px] overflow-hidden w-full !p-0 relative ">
           {images.map((image)=>{
-            return <div className="h-[245px] w-full rounded-[15px] overflow-hidden " >
+            return <div className="h-[245px] !w-[99.9%] rounded-[15px] overflow-hidden " >
                     <div  
-                      //  className={`bg-contain bg-no-repeat h-full   w-full`}
                        style={{
                           background: ` #DDDDDD url(${image}) no-repeat`,
                           backgroundSize:'cover',
@@ -50,7 +53,6 @@ const Post = ({images}) => {
                         }}
 
                        onMouseEnter={(e)=>{
-                        console.log('enter')
                          e.target.style.background=` linear-gradient(180deg, rgba(196, 154, 80, 0.28) 0%, rgba(217, 217, 217, 0) 100%),url(${image}) no-repeat`;
                          e.target.style.width="100%"
                          e.target.style.height="100%";
@@ -62,14 +64,13 @@ const Post = ({images}) => {
                          e.target.style.width="100%"
                          e.target.style.height="100%";
                          e.target.style.backgroundSize="cover";
-                       }}
-                          
+                       }}                          
                     ></div>
               </div>
           })}
-
         
         </Slider>
+        </NavLink>
         
         <div className="absolute  top-[30%] w-full hidden group-hover:inline-block">
             <div className="flex flex-row relative items-center justify-between w-[90%] mx-auto">
@@ -104,7 +105,8 @@ const Post = ({images}) => {
           </div>
         </div>
 
-       </div>)
+       </div>
+       )
 }
 
 export default Post
