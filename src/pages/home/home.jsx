@@ -9,9 +9,9 @@ const Home=()=>{
     <div className="flex flex-col relative h-screen   mb:h-[92.7vh]   w-full" >
         <HomeHeader/>
         <HomeContent/>        
-        {/* <div className="mt-4"> */}
+        <div className="block sm:hidden">
           <BottomNavigation/>
-        {/* </div> */}
+        </div>
     </div>
         )
 }

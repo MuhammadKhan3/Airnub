@@ -41,35 +41,35 @@ const Post = ({images}) => {
 
   <div className="group relative h-[378px] w-full     cursor-pointer group" onClick={()=>{}}>
     <NavLink to='/property/1'>
-     <Slider ref={customeSlider} {...settings} className="h-[245px]  group-hover:outline group-hover:outline-primaryWeb group-hover:outline-offset-2 group-hover:outline-2 rounded-[15px] overflow-hidden w-full !p-0 relative ">
-          {images.map((image)=>{
-            return <div className="h-[245px] !w-full rounded-[15px] overflow-hidden " >
-                    <div  
-                       style={{
-                          background: ` #DDDDDD url(${image}) no-repeat`,
-                          backgroundSize:'cover',
-                          width:'100%',
-                          height:'100%'
-                        }}
+        <Slider ref={customeSlider} {...settings} className="h-[245px]  group-hover:outline group-hover:outline-primaryWeb group-hover:outline-offset-2 group-hover:outline-2 rounded-[15px] overflow-hidden w-full !p-0 relative ">
+              {images.map((image)=>{
+                return <div className="h-[245px] !w-full rounded-[15px] overflow-hidden " >
+                        <div  
+                          style={{
+                              background: ` #DDDDDD url(${image}) no-repeat`,
+                              backgroundSize:'cover',
+                              width:'100%',
+                              height:'100%'
+                            }}
 
-                       onMouseEnter={(e)=>{
-                         e.target.style.background=` linear-gradient(180deg, rgba(196, 154, 80, 0.28) 0%, rgba(217, 217, 217, 0) 100%),url(${image}) no-repeat`;
-                         e.target.style.width="100%"
-                         e.target.style.height="100%";
-                         e.target.style.backgroundSize="cover";
+                          onMouseEnter={(e)=>{
+                            e.target.style.background=` linear-gradient(180deg, rgba(196, 154, 80, 0.28) 0%, rgba(217, 217, 217, 0) 100%),url(${image}) no-repeat`;
+                            e.target.style.width="100%"
+                            e.target.style.height="100%";
+                            e.target.style.backgroundSize="cover";
 
-                       }}
-                       onMouseLeave={(e)=>{
-                         e.target.style.background=` #DDDDDD url(${image}) no-repeat`
-                         e.target.style.width="100%"
-                         e.target.style.height="100%";
-                         e.target.style.backgroundSize="cover";
-                       }}                          
-                    ></div>
-              </div>
-          })}
-        
-        </Slider>
+                          }}
+                          onMouseLeave={(e)=>{
+                            e.target.style.background=` #DDDDDD url(${image}) no-repeat`
+                            e.target.style.width="100%"
+                            e.target.style.height="100%";
+                            e.target.style.backgroundSize="cover";
+                          }}                          
+                        ></div>
+                  </div>
+              })}
+            
+            </Slider>
         </NavLink>
         
         <div className="absolute  top-[30%] w-full hidden group-hover:inline-block">
@@ -83,7 +83,7 @@ const Post = ({images}) => {
             </div>
         </div>
 
-        <img src={Favorite} className="w-6 absolute top-8 right-8"/>
+        <img src={Favorite} className="w-6 absolute top-8 right-2"/>
         <div className="relative top-3 text-black">
           <h1 className="text-base-bold">Upper Portion For Rent</h1>
           <p className="text-smallBold text-secondaryWeb">Bahria Town, Phase-1,  Islamabad</p>

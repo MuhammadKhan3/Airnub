@@ -48,7 +48,7 @@ const HomeContent = () => {
                <HomeFilter filterClick={filterClick} setfilterClick={setfilterClick} />
        </div>
        
-       <div className='mx-auto rounded-xl mt-48 mb:mt-[10vh] flex flex-row items-center  gap-10 w-auto  mb:flex-col  mb:gap-5 sm:mt-[20vh] md:mt-[25vh]  lg:mt-[25vh]  xl:mt-[22vh] 2xl:mt-[15vh] 3xl:mt-[15vh] '>
+       <div className='mx-auto rounded-xl mt-48 mb:mt-[10vh] flex flex-row items-center  gap-10 w-auto  mb:flex-col  mb:gap-5 sm:mt-[20vh] md:mt-32  lg:mt-36  xl:mt-24 2xl:mt-28 3xl:mt-[15vh] '>
           <div>
             <a style={{boxShadow:' 0px 3px 18px rgba(0, 0, 0, 0.2)'}} className='px-[34px] rounded-full text-white py-[12px] bg-primaryWeb mb:hidden cursor-pointer'>Wanted</a>
             <a  className='px-[34px]  py-[12px] border-[1px] border-[#717171] hidden mb:inline-block text-base2 text-[#717171] rounded-[10px] hover:text-primaryWeb hover:border-primaryWeb'>Wanted</a>
