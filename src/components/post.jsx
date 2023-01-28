@@ -43,7 +43,7 @@ const Post = ({images}) => {
     <NavLink to='/property/1'>
      <Slider ref={customeSlider} {...settings} className="h-[245px]  group-hover:outline group-hover:outline-primaryWeb group-hover:outline-offset-2 group-hover:outline-2 rounded-[15px] overflow-hidden w-full !p-0 relative ">
           {images.map((image)=>{
-            return <div className="h-[245px] !w-[99.9%] rounded-[15px] overflow-hidden " >
+            return <div className="h-[245px] !w-full rounded-[15px] overflow-hidden " >
                     <div  
                        style={{
                           background: ` #DDDDDD url(${image}) no-repeat`,

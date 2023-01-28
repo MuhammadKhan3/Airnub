@@ -71,12 +71,22 @@ body::-webkit-scrollbar {
   width: 88px;
   top: 80% !important;
 }
+.slick-slide{
+  /* width:  !important; */
+}
+
 .slick-slide>div{
   padding: 0px !important;
 }
 
 .slick-track{
-  width: 90%;
+  width: 100%;
+}
+.slick-track div{
+  /* margin-left: 1px; */
+}
+.slick-active{
+  margin: 1px;
 }
 .slick-dots{
   @apply

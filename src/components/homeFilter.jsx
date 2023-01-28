@@ -61,7 +61,9 @@ const HomeFilter = ({filterClick,setfilterClick}) => {
     </div>
     <div className='bg-[#F7F7F7] rounded-[74px] overflow-hidden h-[67px] mx-auto  hidden  w-[390px]  px-2 mb:flex mb:flex-row mb:items-center ' style={{boxShadow: '0px 3px 60px rgba(0, 0, 0, 0.2)'}}>
        <input type='text' placeholder='Start your search' className='bg-[#F7F7F7]  border-none w-[90%] outline-none ring-0  focus:ring-0 h-full text-base'/>
-       <FiSearch size={20} className=" border-[1px]  cursor-pointer border-[#C0C0C0]  p-2 w-[39px] h-[39px] rounded-full"/>
+       <NavLink to='/property'>
+          <FiSearch size={20} className=" border-[1px]  cursor-pointer border-[#C0C0C0]  p-2 w-[39px] h-[39px] rounded-full"/>
+       </NavLink>
     </div>
   </section>
   )
